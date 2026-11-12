@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* style when screen is tablet size */ 
+@media screen and (max-width: 825px) {
+    body {
+        font-size: 1em;
+        line-height: 1.2em;
+    }
+    #wrapper {
+        max-width: 825px;    
+    }
+    header {
+        background-image: url("../Web_Images/Gm_B_1.jpeg");
+        background-repeat: no-repeat;
+		position: absolute;
+		height: 220;
+		width: auto;
+    }
+    .feature {
+        height: 250px;
+    }
+    .video {
+        height: 350px;
+    }
+    .logo {
+        width:40%;
+	position: absolute;
+	top: 15%;
+	right: 30%;
+    }
+    .col-1 {
+        float: left;
+        width: 97%;
+        padding: 0.9em;
+    }
+    .col-2 {
+        float: left;
+        width: 46%;
+        padding: 0.9em;
+    }
+    .col-2 .imgtype {
+        width: 96%;
+        height: 170px;
+    }
+    /* nav styles */
+    nav {
+        font-size:1.1em;
+        line-height: 1.2em;
+    }
+    section h1 {
+        font-size: 1.6em;
+    }
+    section h2 {
+        font-size: 1.3em;
+    }
+    section h3 {
+        font-size: 1.1em;
+    }
+    footer {
+        height: 100px;
+    }
+}
+
+/* style when screen is mobile size */
+@media screen and (max-width: 625px) {
+	#wrapper {
+		max-width: 625px;
+	}
+	header {
+		background-image: url("../Web_Images/Gm_B_1.jpeg");
+		background-repeat: no-repeat;
+		height: 167px;
+		width: auto;
+	}
+	.logo {
+		width:40%;
+		position: absolute;
+		top: 15%;
+		right: 30%;
+	}
+	.feature {
+  		height: 320px;
+	}
+	.video {
+		height: 300px;
+	}
+	/* nav styles; make menu one column and stacked on top */
+	nav {
+		width: 100%;
+        height: 40px;
+	}
+	nav ul {
+		font-size: 0.9em;
+		line-height: .9em;
+		display: block;
+	}
+	nav li {
+		width: 100%;
+		float: none;
+		border-bottom: solid thin #444;
+	}
+	nav li a {
+		height: 20px;
+	}
+	/* fix for errors in mobile view*/
+	nav::after {
+		content:'';
+		display: block;
+		clear: both;
+	}
+	section h1 {
+        margin-top: 0.5em;
+		font-size: 1.3em;
+	}
+	section h2 {
+		font-size: 1.1em;
+		margin-bottom: 3px;
+	}
+	/* section rows revert to 1 column*/
+	.col-1, .col-2 {
+		float: left;
+		width: 95%;
+		padding: 0.8em;
+	}
+	.col-2 .imgtype {
+		width: 95%;
+ 		height: 230px;
+	}
+	
+	footer {
+		height: 100px;
+	}
+}

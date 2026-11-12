@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Gamer Dude</title>
+        <link rel="shortcut icon" type="image/png" href="Web_Images/Controller_icon.png">
+        <meta name="viewport" content="width=device-width">
+        <link type="text/css" rel="stylesheet" href="CSS_stuff/hotbarstuff.css">
+        <link type="text/css" rel="stylesheet" href="CSS_stuff/style_index.css">
+        <link type="text/css" rel="stylesheet" href="CSS_stuff/responsivething.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    </head>
+<body>
+    <div id="wrapper"><!--start of wrapper-->
+        <header><img class="logo" src="web_images/G-D LOGOw.png"/></header>
+        <nav><!--start of navigation-->
+            <div class="navbar">
+                <div class="topnav" id="myTopnav">
+                    <a href="index.html">Home</a>
+                    <a href="Community.html">Community</a>
+                    <a href="locations.html">Locations</a>
+                    <a href="products.html">Products</a>
+                    <a class="active" href="complaint.html">Make a complaint</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Social Medias
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                        <a href="https://www.facebook.com/illias.koukoulas/">Facebook Page</a>
+                        <a href="https://www.instagram.com/illias.koukoulas/">Instagram Page</a>
+                        <a href="https://youtu.be/V13wgf1adw0?si=CgPD3-YuDFlogO0s">Youtube Page</a>
+                    </div>
+                    </div>
+                    <a href="javascript:void(0);" class="icon" onclick="fnMenu()">&#9776;</a>
+                </div>
+            </div>
+        </nav>
+        <section class="row">
+            <aside>
+                <div class="col-1">
+                    <h1>Submit your appeal here</h1>
+                    <p> Gamer Dude understands that sometimes your products may be faulty. To apply for getting a refund or a replacement, please fill out the form below.</p>
+                </div>
+            </aside>
+        </section>
+        &nbsp;<section class="row">
+            <form>
+                <label for="product">&nbsp; Enter product that is malfunctioning:</label>
+                <input type="text" id="product" name="product" placeholder="product" required>
+                <br>
+                <br>
+                <label for="email_address">&nbsp; Enter Email Address:</label>
+                <input type="email" id="email_address" name=email placeholder="your email" required>
+                <br>
+                <br>
+                <label for="password">&nbsp; Enter Password:</label>
+                <input type="password" id="password" name="password" placeholder="enter your password" required>
+            
+            <p>&nbsp; Select your age:</p>
+            <input type="radio" name="age" value="0-25" id="option-1">
+            <label for="option-1">0-25</label>
+            <input type="radio" name="age" value="26-50" id="option-2">
+            <label for="option-2">26-50</label>
+            <input type="radio" name="age" value="51+" id="option-3">
+            <label for="option-3">51+</label>
+            
+            <!--
+            <p>Select your gender</p>
+            <form action="gender">
+            <input type="radio" name="gender" value="male">Male<br>
+            <input type="radio" name="gender" value="female">Female<br>
+            <input type="radio" name="gender" value="other">Other<br>
+            -->
+            <br><br>
+            
+            <p>&nbsp; Select your which store you purchased the product from:</p>
+            <input type="radio" name="store" value="CBD" id="GD_CBD">
+            <label for="GB_CBD">Gamer Dude CBD</label>
+            <input type="radio" name="store" value="SH" id="GB_SH">
+            <label for="GB_SH">Gamer Dude Surry Hills</label>
+            <input type="radio" name="store" value="O" id="GB_O">
+            <label for="GB_O">Online Purchase</label>
+            
+            <br><br>
+            
+            <label for="bio">More about the problem:</label><br>
+            <textarea name="bio" id="bio" cols="30" rows="10" placeholder="tell us more about the issue"></textarea>
+            
+            <br><br>
+            
+            <input type="submit" value="submit the form">
+            
+            </form>
+            
+        <footer>
+            <div class="content">
+                <p>Gamer Dude Offical Copyright 2026 &copy; All Rights Reserved</p>
+                </div>
+        </footer>
+    </div>
+    
+<script>
+function fnMenu() {
+    //store myTopnav value in variable x
+    var x = document.getElementById("myTopnav");
+    //if value of x = "topnav" then add "responsive" to x value
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+    //set x value to "topnav"
+        x.className = "topnav";
+    }
+}
+</script>
+</body>
+</html>
